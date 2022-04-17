@@ -1,11 +1,11 @@
 import React from 'react';
 import { Button, Card, Col } from 'react-bootstrap';
 import { useNavigate } from 'react-router-dom';
-import './SinglePackage.css'
+import './Service.css'
 import { AiOutlineCheckCircle } from 'react-icons/ai';
 
-const SinglePackage = ({ tour }) => {
-    const { id, name, price, img } = tour
+const Service = ({ tour }) => {
+    const { id, name, price, img, description } = tour
     const navigate = useNavigate()
     const handleNavigateToBooking = id => {
         navigate(`/details/${id}`)
@@ -19,12 +19,7 @@ const SinglePackage = ({ tour }) => {
                         <Card.Title>{name}</Card.Title>
                         <h5>${price}</h5>
                         <Card.Text className='description mb-5'>
-                            <div>
-                                <p><AiOutlineCheckCircle></AiOutlineCheckCircle> Photoshoot</p>
-                                <p><AiOutlineCheckCircle></AiOutlineCheckCircle> Hotel & resot booking</p>
-                                <p><AiOutlineCheckCircle></AiOutlineCheckCircle> Info & tips about the destination</p>
-                                <p><AiOutlineCheckCircle></AiOutlineCheckCircle> Info & tips about the passport & visa</p>
-                            </div>
+                            {description}
                         </Card.Text>
                     </Card.Body>
                     <Button onClick={() => handleNavigateToBooking(id)} className='details-btn w-100 py-2'>Book now</Button>
@@ -34,4 +29,4 @@ const SinglePackage = ({ tour }) => {
     );
 };
 
-export default SinglePackage;
+export default Service;

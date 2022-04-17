@@ -1,0 +1,37 @@
+[
+    {
+        "id": 1,
+        "name": "Photoshoot",
+        "price": "300",
+        "description": "Hire me and you will get a guide to the way of your travel and a professional photographer. ",
+        "img": "https://www.iwmbuzz.com/wp-content/uploads/2021/06/auto-draft-2507-630x350.jpg"
+    },
+    {
+        "id": 2,
+        "name": "Hotel & resort booking",
+        "price": "100",
+        "description": "I will help you to find the best and safe accommodation in your dream destination.",
+        "img": "https://cutt.ly/mFBevhH"
+    },
+    {
+        "id": 3,
+        "name": "Info & tips about the destination.",
+        "price": "150",
+        "description": "I will provide you all the information about the travel destination.",
+        "img": "https://www.deshghuri.com/wp-content/uploads/2014/05/sail-the-fishing-boat-is-coxs-bazar-tour-with-deshghuri.jpg"
+    },
+    {
+        "id": 4,
+        "name": "Info & tips about the passport and visa.",
+        "price": "180",
+        "description": "I will help you in your immigration if you are the traveller from abroad.",
+        "img": "https://lbrcontent.affino.com/AcuCustom/Sitename/DAM/011/Pic1.jpg"
+    },
+    {
+        "id": 5,
+        "name": "Fulltime travel guide",
+        "price": "100",
+        "description": "I can be your historical guide, museum guide, nature and city guide.",
+        "img": "https://www.deshghuri.com/wp-content/uploads/2014/09/srimangal_hamham_waterfall_walkway.jpg"
+    }
+]

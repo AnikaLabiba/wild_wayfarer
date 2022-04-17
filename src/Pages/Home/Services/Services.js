@@ -1,23 +1,23 @@
 import React, { useEffect, useState } from 'react';
-import SinglePackage from '../../SinglePackage/SinglePackage';
+import Service from '../../Service/Service';
 import { Row } from 'react-bootstrap';
 
 const Packages = () => {
     const [packages, setPackages] = useState([])
     useEffect(() => {
-        fetch('packages.json')
+        fetch('services.json')
             .then(res => res.json())
             .then(data => setPackages(data))
     }, [])
     return (
-        <div id='packages'>
-            <h2 className='text-center my-5'>Upcoming Packages</h2>
+        <div id='services'>
+            <h2 className='text-center my-5'>My Services</h2>
             <div className='container mb-5'>
                 <Row xs={1} md={2} lg={2} className="g-4">
-                    {packages.map(tour => <SinglePackage
+                    {packages.map(tour => <Service
                         key={tour.id}
                         tour={tour}
-                    ></SinglePackage>)}
+                    ></Service>)}
                 </Row>
             </div>
         </div>

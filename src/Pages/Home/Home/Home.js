@@ -1,6 +1,6 @@
 import React from 'react';
 import GuideInfo from '../GuideInfo/GuideInfo';
-import Packages from '../Packages/Packages';
+import Services from '../Services/Services';
 import Slider from '../Slider/Slider';
 
 const Home = () => {
@@ -8,7 +8,7 @@ const Home = () => {
         <div>
             <Slider></Slider>
             <GuideInfo></GuideInfo>
-            <Packages></Packages>
+            <Services></Services>
         </div>
     );
 };
