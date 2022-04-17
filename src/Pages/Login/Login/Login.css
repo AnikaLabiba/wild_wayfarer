@@ -20,9 +20,8 @@ padding: 30px 50px;
 }
 .social-btn:hover{
     border-radius: 100px;
-    background: none;
-    border: none;
-    padding: 0;
+    background-color: #B0BDE0;
+    padding: 4px;
 }
 @media only screen and (max-width:576px) {
     .form-container{

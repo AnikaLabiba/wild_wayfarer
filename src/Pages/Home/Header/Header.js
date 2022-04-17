@@ -19,7 +19,7 @@ const Header = () => {
                             <Nav.Link as={Link} eventKey={2} to="/about">
                                 About me
                             </Nav.Link>
-                            {user ? <button>Signout</button>
+                            {user ? <button className='btn btn-link text-dark text-decoration-none'>Signout</button>
                                 : <Nav.Link as={Link} eventKey={2} to="/login">
                                     Login
                                 </Nav.Link>}

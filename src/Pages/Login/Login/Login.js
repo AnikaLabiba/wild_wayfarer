@@ -1,6 +1,7 @@
 import React from 'react';
 import { Button, Form } from 'react-bootstrap';
 import { Link } from 'react-router-dom';
+import SocialLogin from '../SocialLogin/SocialLogin';
 import './Login.css'
 
 const Login = () => {
@@ -26,6 +27,7 @@ const Login = () => {
                     <Button type="submit" className="btn btn-dark w-100 mx-auto d-block">Login</Button>
                 </Form>
                 <p className='text-center mt-4'>New to Wild Wayfarer? <Link to='/register'>Please Register</Link></p>
+                <SocialLogin></SocialLogin>
             </div>
         </div>
     );
