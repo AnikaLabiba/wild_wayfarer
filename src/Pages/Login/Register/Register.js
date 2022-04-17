@@ -28,7 +28,7 @@ const Register = () => {
                         <Form.Control type="password" name='confirmPassword' placeholder="Confirm Password" required />
                     </Form.Group>
                     {/* <p className='text-danger'>{error?.message}</p> */}
-                    <Button className='resetPass-btn mx-auto d-block text-primary mb-3'>Forgot Password?</Button>
+
                     <Button type="submit" className="btn btn-dark w-100 mx-auto d-block">Submit</Button>
                 </Form>
                 <p className='text-center mt-4'>Already have an account? <Link to='/login'>Please Login</Link></p>

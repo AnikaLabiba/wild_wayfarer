@@ -5,14 +5,14 @@ background: #c5bebe6c;
 box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
 padding: 30px 50px;
 }
-.resetPass-btn{
+/* .resetPass-btn{
     border: none;
     background:none;
 }
 .resetPass-btn:hover{
     border: none;
     background:none;
-}
+} */
 .social-btn{
     background: none;
     border: none;

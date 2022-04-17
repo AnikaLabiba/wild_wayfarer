@@ -20,8 +20,8 @@ const Login = () => {
                         <Form.Label>Password</Form.Label>
                         <Form.Control type="password" name='password' placeholder="Password" required />
                     </Form.Group>
-
-                    <Button className='resetPass-btn mx-auto d-block text-primary mb-3'>Forgot Password?</Button>
+                    <p className='text-center'>Forgot password?<button className='text-primary text-decoration-none btn btn-link mb-2'>Reset password</button></p>
+                    {/* <Button className='text-primary text-decoration-none btn btn-link mb-3'>Forgot Password?</Button> */}
                     <Button type="submit" className="btn btn-dark w-100 mx-auto d-block">Login</Button>
                 </Form>
                 <p className='text-center mt-4'>New to Wild Wayfarer? <Link to='/register'>Please Register</Link></p>
