@@ -1,37 +1,37 @@
 [
     {
         "id": 1,
-        "name": "ENGINE DIAGNOSTIC",
+        "name": "Way to Shundarban",
         "price": "300",
-        "description": "Lorem ipsum dolor sit amet, consectetu radipisi cing elitBeatae autem aperiam nequ quaera molestias voluptatibus harum ametipsa.",
-        "img": "https://i.ibb.co/dGDkr4v/1.jpg"
+        "description": "Explore the rich variety of life, culture and nature covering most popular UNESCO World Heritage Sites. The tour covers the Dhaka City, biggest mangrove forest the Sundarban and world heritage mosque city of Bagherhut.",
+        "img": "https://www.deshghuri.com/wp-content/uploads/2014/02/nijhumdwip-in-a-place-of-dear.jpg"
     },
     {
         "id": 2,
-        "name": "WHEEL ALIGNMENT",
+        "name": "DHAKA CITY: MEET THE HERITAGE & THE PEOPLE",
         "price": "100",
-        "description": "Lorem ipsum dolor sit amet, consectetu radipisi cing elitBeatae autem aperiam nequ quaera molestias voluptatibus harum ametipsa.",
-        "img": "https://i.ibb.co/tY8dmnP/2.jpg"
+        "description": "If you are in a short trip and want to explore people and culture, there is no better way than doing it on a day trip in old Dhaka. You will find most of the historical places of the capital and old Dhaka, can explore most of the things to do in Bangladesh and Dhaka with all the marked in travel guide like Lonely Planet,.",
+        "img": "https://www.deshghuri.com/wp-content/uploads/2014/10/lalbag-fort.jpg"
     },
     {
         "id": 3,
-        "name": "OIL CHANGING",
+        "name": "Catch your blue dream in Saint Martin",
         "price": "150",
-        "description": "Lorem ipsum dolor sit amet, consectetu radipisi cing elitBeatae autem aperiam nequ quaera molestias voluptatibus harum ametipsa.",
-        "img": "https://i.ibb.co/Yh04YVw/3.jpg"
+        "description": "Cox’s Bazar  is said to be the longest sea beach in the world and most of Bangladesh’s tourist infrastructure resides in Cox’s Bazar. It has all the attractions for beach lover like big waves, hills around the beaches, waterfalls, ethnic community life, island around to keep the tourist alive for days.",
+        "img": "https://www.deshghuri.com/wp-content/uploads/2014/05/sail-the-fishing-boat-is-coxs-bazar-tour-with-deshghuri.jpg"
     },
     {
         "id": 4,
-        "name": "BRAKE REPARING",
+        "name": "EXPLORE ETHNIC CULTURE IN BANGLADESH: VISIT CHITTAGONG HILL TRACKS",
         "price": "180",
-        "description": "Lorem ipsum dolor sit amet, consectetu radipisi cing elitBeatae autem aperiam nequ quaera molestias voluptatibus harum ametipsa.",
-        "img": "https://i.ibb.co/ZX2Cbkn/4.jpg"
+        "description": "Get on to the Jeep of British Period (1945) to rach to the hill top and Experience Ethnic Life (in stay, food, and culture), interact with the Ethnic Community(Lusai) of Bangladesh, do short trekking to explore beautiful nature, hidden waterfall, natural cave and more.",
+        "img": "https://www.deshghuri.com/wp-content/uploads/2017/03/sajek-profile-400x250.jpg"
     },
     {
         "id": 5,
-        "name": "WASH AND GLASSING",
+        "name": "03 DAYS IN BANGLADESH: EXPLORE CULTURE, HERITAGE AND RELAX IN NATURE",
         "price": "100",
-        "description": "Lorem ipsum dolor sit amet, consectetu radipisi cing elitBeatae autem aperiam nequ quaera molestias voluptatibus harum ametipsa.",
-        "img": "https://i.ibb.co/FgQ3jXp/5.jpg"
+        "description": "This tour is for heavy traveler who want to get a good idea of Bangladesh in short trip. In this trip you will get idea of Bangladesh’s cluture and heritage as well as a day to experience nature, short wild life tour and life around tea gardens.",
+        "img": "https://www.deshghuri.com/wp-content/uploads/2014/09/srimangal_hamham_waterfall_walkway.jpg"
     }
 ]

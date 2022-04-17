@@ -5,13 +5,13 @@ import { Link } from 'react-router-dom';
 const Header = () => {
     return (
         <div>
-            <Navbar collapseOnSelect expand="lg" bg="light" variant="light">
+            <Navbar style={{ backgroundColor: '#B0BDE0' }} collapseOnSelect expand="lg" variant="light">
                 <Container>
                     <Navbar.Brand as={Link} to="/">Wild Wayfarer</Navbar.Brand>
                     <Navbar.Toggle aria-controls="responsive-navbar-nav" />
                     <Navbar.Collapse id="responsive-navbar-nav" className="justify-content-end">
                         <Nav>
-                            <Nav.Link as={Link} to="/packages">Packages</Nav.Link>
+                            <Nav.Link href='#packages'>Packages</Nav.Link>
                             <Nav.Link as={Link} to="/blogs">Blogs</Nav.Link>
                             <Nav.Link as={Link} eventKey={2} to="/about">
                                 About me

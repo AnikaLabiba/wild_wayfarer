@@ -8,7 +8,7 @@ import picture5 from '../../../Images/Carousel/carousel5.png'
 
 const Slider = () => {
     return (
-        <div>
+        <div className='mb-4'>
             <Carousel fade>
                 <Carousel.Item>
                     <img

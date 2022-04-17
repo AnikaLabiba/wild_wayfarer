@@ -1,0 +1,37 @@
+.form-container{
+width: 40%;
+border-radius: 15px;
+background: #c5bebe6c;
+box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+padding: 30px 50px;
+}
+.resetPass-btn{
+    border: none;
+    background:none;
+}
+.resetPass-btn:hover{
+    border: none;
+    background:none;
+}
+.social-btn{
+    background: none;
+    border: none;
+    padding: 0;
+}
+.social-btn:hover{
+    border-radius: 100px;
+    background: none;
+    border: none;
+    padding: 0;
+}
+@media only screen and (max-width:576px) {
+    .form-container{
+       width: 90%;
+    }
+}
+
+@media only screen and (min-width: 577px) and (max-width: 992px) {
+    .form-container{
+        width: 90%;
+    }
+}
