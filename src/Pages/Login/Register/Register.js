@@ -1,10 +1,37 @@
 import React from 'react';
 import { Button, Form } from 'react-bootstrap';
 import { Link } from 'react-router-dom';
+import { useCreateUserWithEmailAndPassword } from 'react-firebase-hooks/auth';
+import auth from '../../../firebase.init'
 
 const Register = () => {
+    const [
+        createUserWithEmailAndPassword,
+        user,
+        loading,
+        error,
+    ] = useCreateUserWithEmailAndPassword(auth);
     const handleRegister = event => {
         event.preventDefault()
+        const name = event.target.name.value
+        const email = event.target.email.value
+        const password = event.target.password.value
+        const confirmPassword = event.target.confirmPassword.value
+        if (password === confirmPassword) {
+            if (password.length > 6) {
+                createUserWithEmailAndPassword(email, password)
+            }
+            else {
+                alert('Password must be 6 character or more.')
+                return;
+            }
+        }
+        else {
+            alert('Two password did not matched.')
+            return;
+        }
+
+        console.log(name, email, password, confirmPassword)
     }
     return (
         <div>
