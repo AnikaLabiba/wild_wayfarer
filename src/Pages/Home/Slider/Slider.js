@@ -2,7 +2,9 @@ import React from 'react';
 import { Carousel } from 'react-bootstrap';
 import picture1 from '../../../Images/Carousel/carousel1.png'
 import picture2 from '../../../Images/Carousel/carousel2.png'
-import picture3 from '../../../Images/Carousel/tang.png'
+import picture3 from '../../../Images/Carousel/carousel3.png'
+import picture4 from '../../../Images/Carousel/carousel4.png'
+import picture5 from '../../../Images/Carousel/carousel5.png'
 
 const Slider = () => {
     return (
@@ -15,8 +17,8 @@ const Slider = () => {
                         alt="First slide"
                     />
                     <Carousel.Caption>
-                        <h3>First slide label</h3>
-                        <p>Nulla vitae elit libero, a pharetra augue mollis interdum.</p>
+                        <h3>Cox's Bazar</h3>
+                        <p>Do not follow where the path may lead. Go instead where there is no path and leave a trail” – Ralph Waldo Emerson</p>
                     </Carousel.Caption>
                 </Carousel.Item>
                 <Carousel.Item>
@@ -27,8 +29,8 @@ const Slider = () => {
                     />
 
                     <Carousel.Caption>
-                        <h3>Second slide label</h3>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                        <h3>Saint Martin</h3>
+                        <p>Do not follow where the path may lead. Go instead where there is no path and leave a trail” – Ralph Waldo Emerson</p>
                     </Carousel.Caption>
                 </Carousel.Item>
                 <Carousel.Item>
@@ -39,12 +41,34 @@ const Slider = () => {
                     />
 
                     <Carousel.Caption>
-                        <h3>Third slide label</h3>
-                        <p>Praesent commodo cursus magna, vel scelerisque nisl consectetur.</p>
+                        <h3>Tanguar Hawor</h3>
+                        <p>Do not follow where the path may lead. Go instead where there is no path and leave a trail” – Ralph Waldo Emerson</p>
+                    </Carousel.Caption>
+                </Carousel.Item>
+                <Carousel.Item>
+                    <img
+                        className="d-block w-100"
+                        src={picture4}
+                        alt="Third slide"
+                    />
+                    <Carousel.Caption>
+                        <h3>Sajek</h3>
+                        <p>Do not follow where the path may lead. Go instead where there is no path and leave a trail” – Ralph Waldo Emerson</p>
+                    </Carousel.Caption>
+                </Carousel.Item>
+                <Carousel.Item>
+                    <img
+                        className="d-block w-100"
+                        src={picture5}
+                        alt="Third slide"
+                    />
+                    <Carousel.Caption>
+                        <h3>Bandarban</h3>
+                        <p>Do not follow where the path may lead. Go instead where there is no path and leave a trail” – Ralph Waldo Emerson</p>
                     </Carousel.Caption>
                 </Carousel.Item>
             </Carousel>
-        </div>
+        </div >
     );
 };
 
