@@ -1,6 +1,6 @@
 import React from 'react';
 import { Button, Form } from 'react-bootstrap';
-import { Link } from 'react-router-dom';
+import { Link, useNavigate } from 'react-router-dom';
 import { useCreateUserWithEmailAndPassword } from 'react-firebase-hooks/auth';
 import auth from '../../../firebase.init'
 import SocialLogin from '../SocialLogin/SocialLogin';
@@ -9,6 +9,7 @@ import 'react-toastify/dist/ReactToastify.css';
 import Loading from '../../Shared/Loading/Loading';
 
 const Register = () => {
+    const navigate = useNavigate()
     const [
         createUserWithEmailAndPassword,
         user,
@@ -16,6 +17,9 @@ const Register = () => {
         error,
     ] = useCreateUserWithEmailAndPassword(auth, { sendEmailVerification: true });
 
+    if (user) {
+        navigate('/home')
+    }
 
     if (loading) {
         return <Loading></Loading>
