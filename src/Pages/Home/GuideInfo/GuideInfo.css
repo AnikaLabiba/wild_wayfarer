@@ -1,7 +1,21 @@
 .guide-info{
     background-color: #B0BDE0;
     padding: 30px;
+    border-radius: 10px;
+    margin-top: 20px;
 }
 .guide-info .info{
     line-height: 35px;
 }
+.guide-info{
+    box-shadow: rgba(0, 0, 0, 0.363) 0px 4px 12px;
+    animation: zoom 5s ease-in-out 0s infinite alternate;
+}
+   @keyframes zoom {
+       0%{
+           transform: scale(1);
+       }
+       100%{
+           transform: scale(1.1);
+       }
+   }
