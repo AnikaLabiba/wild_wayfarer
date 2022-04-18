@@ -14,6 +14,6 @@
 
 ## Live site Link
 
-Open (https://wild-wayfarer.firebaseapp.com/) to view it in your browser.
+Open (https://wild-wayfarer.web.app) to view it in your browser.
 
 
