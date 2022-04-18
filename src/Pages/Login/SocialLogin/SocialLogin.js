@@ -1,15 +1,19 @@
-import React, { useState } from 'react';
 import google from '../../../Images/social/google.png'
 import facebook from '../../../Images/social/facebook.png'
 import github from '../../../Images/social/github.png'
 import { useSignInWithFacebook, useSignInWithGithub, useSignInWithGoogle } from 'react-firebase-hooks/auth';
 import auth from '../../../firebase.init';
+import Loading from '../../Shared/Loading/Loading';
 
 const SocialLogin = () => {
     const [signInWithGoogle, googleUser, googleLoading, googleError] = useSignInWithGoogle(auth);
     const [signInWithGithub, githubUser, githubLoading, githubError] = useSignInWithGithub(auth);
     const [signInWithFacebook, facebookUser, facebookLoading, facebookError] = useSignInWithFacebook(auth);
-    const [error, setError] = useState('')
+
+
+    if (googleLoading || githubLoading || facebookLoading) {
+        return <Loading></Loading>
+    }
 
     let errorElement;
     if (facebookError || githubError || googleError) {

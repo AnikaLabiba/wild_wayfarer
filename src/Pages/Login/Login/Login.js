@@ -7,6 +7,7 @@ import SocialLogin from '../SocialLogin/SocialLogin';
 import { ToastContainer, toast } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
 import './Login.css'
+import Loading from '../../Shared/Loading/Loading';
 
 const Login = () => {
     const location = useLocation()
@@ -27,6 +28,9 @@ const Login = () => {
 
     let from = location.state?.from?.pathname || "/";
 
+    if (loading || sending) {
+        return <Loading></Loading>
+    }
     if (user) {
         navigate(from, { replace: true });
     }

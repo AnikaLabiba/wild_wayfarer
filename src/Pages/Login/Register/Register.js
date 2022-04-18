@@ -6,6 +6,7 @@ import auth from '../../../firebase.init'
 import SocialLogin from '../SocialLogin/SocialLogin';
 import { ToastContainer, toast } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
+import Loading from '../../Shared/Loading/Loading';
 
 const Register = () => {
     const [
@@ -14,6 +15,11 @@ const Register = () => {
         loading,
         error,
     ] = useCreateUserWithEmailAndPassword(auth, { sendEmailVerification: true });
+
+
+    if (loading) {
+        return <Loading></Loading>
+    }
     const handleRegister = event => {
         event.preventDefault()
         const name = event.target.name.value
@@ -55,7 +61,7 @@ const Register = () => {
                     <Form.Group className="mb-3" controlId="formBasicPassword">
                         <Form.Control type="password" name='confirmPassword' placeholder="Confirm Password" required />
                     </Form.Group>
-                    {/* <p className='text-danger'>{error?.message}</p> */}
+                    <p className='text-danger'>{error?.message}</p>
 
                     <Button type="submit" className="btn btn-dark w-100 mx-auto d-block">Submit</Button>
                 </Form>

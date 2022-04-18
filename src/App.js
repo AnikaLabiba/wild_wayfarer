@@ -9,6 +9,7 @@ import Checkout from './Pages/Checkout/Checkout';
 import Footer from './Pages/Shared/Footer/Footer';
 import RequireAuth from './Pages/RequireAuth/RequireAuth';
 import About from './Pages/About/About';
+import Blogs from './Pages/Blogs/Blogs';
 
 function App() {
   return (
@@ -22,9 +23,8 @@ function App() {
         <Route path='/details/:serviceId' element={<RequireAuth>
           <Checkout></Checkout>
         </RequireAuth>}></Route>
-        <Route path='/about' element={<RequireAuth>
-          <About></About>
-        </RequireAuth>}></Route>
+        <Route path='/about' element={<About></About>}></Route>
+        <Route path='/blogs' element={<Blogs></Blogs>}></Route>
         <Route path='*' element={<NotFound></NotFound>}></Route>
       </Routes>
       <Footer></Footer>
