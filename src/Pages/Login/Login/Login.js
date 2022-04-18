@@ -1,12 +1,34 @@
 import React from 'react';
-import { Button, Form } from 'react-bootstrap';
-import { Link } from 'react-router-dom';
+import { Form } from 'react-bootstrap';
+import { useAuthState, useSignInWithEmailAndPassword } from 'react-firebase-hooks/auth';
+import { Link, useLocation, useNavigate } from 'react-router-dom';
+import auth from '../../../firebase.init';
 import SocialLogin from '../SocialLogin/SocialLogin';
 import './Login.css'
 
 const Login = () => {
+    const location = useLocation()
+    const navigate = useNavigate()
+    const [user] = useAuthState(auth)
+
+    const [
+        signInWithEmailAndPassword,
+        loginUser,
+        loading,
+        error,
+    ] = useSignInWithEmailAndPassword(auth);
+
+    let from = location.state?.from?.pathname || "/";
+
+    if (user) {
+        navigate(from, { replace: true });
+    }
+
     const handleLogin = event => {
         event.preventDefault()
+        const email = event.target.email.value;
+        const password = event.target.password.value;
+        signInWithEmailAndPassword(email, password)
 
     }
     return (
@@ -21,7 +43,6 @@ const Login = () => {
                         <Form.Control type="password" name='password' placeholder="Password" required />
                     </Form.Group>
                     <p className='text-center'>Forgot password?<button className='text-primary text-decoration-none btn btn-link mb-2'>Reset password</button></p>
-                    {/* <Button className='text-primary text-decoration-none btn btn-link mb-3'>Forgot Password?</Button> */}
                     <button type="submit" className="submit-btn w-100 mx-auto d-block">Login</button>
                 </Form>
                 <p className='text-center mt-4'>New to Wild Wayfarer? <Link to='/register'>Please Register</Link></p>
