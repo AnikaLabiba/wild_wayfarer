@@ -2,7 +2,6 @@ import React, { useState } from 'react';
 import google from '../../../Images/social/google.png'
 import facebook from '../../../Images/social/facebook.png'
 import github from '../../../Images/social/github.png'
-import './SocialLogin.css'
 import { useSignInWithFacebook, useSignInWithGithub, useSignInWithGoogle } from 'react-firebase-hooks/auth';
 import auth from '../../../firebase.init';
 
