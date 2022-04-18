@@ -10,10 +10,14 @@ import Footer from './Pages/Shared/Footer/Footer';
 import RequireAuth from './Pages/RequireAuth/RequireAuth';
 import About from './Pages/About/About';
 import Blogs from './Pages/Blogs/Blogs';
+import { createContext, useState } from 'react';
+
+export const ServiceContext = createContext()
 
 function App() {
+  const [services, setServices] = useState([])
   return (
-    <div>
+    <ServiceContext.Provider value={[services, setServices]}>
       <Header></Header>
       <Routes>
         <Route path='/' element={<Home></Home>}></Route>
@@ -28,7 +32,7 @@ function App() {
         <Route path='*' element={<NotFound></NotFound>}></Route>
       </Routes>
       <Footer></Footer>
-    </div>
+    </ServiceContext.Provider>
   );
 }
 

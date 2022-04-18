@@ -18,12 +18,12 @@ const Header = () => {
                     <Navbar.Toggle aria-controls="responsive-navbar-nav" />
                     <Navbar.Collapse id="responsive-navbar-nav" className="justify-content-end">
                         <Nav>
-                            <Nav.Link href='#services'>Services</Nav.Link>
+                            <Nav.Link href='home#services'>Services</Nav.Link>
                             <Nav.Link as={Link} to="/blogs">Blogs</Nav.Link>
                             <Nav.Link as={Link} eventKey={2} to="/about">
                                 About me
                             </Nav.Link>
-                            {user ? <button onClick={handleSignout} className='btn btn-link text-dark text-decoration-none'>Signout</button>
+                            {user ? <Nav.Link onClick={handleSignout} >Signout</Nav.Link>
                                 : <Nav.Link as={Link} eventKey={2} to="/login">
                                     Login
                                 </Nav.Link>}

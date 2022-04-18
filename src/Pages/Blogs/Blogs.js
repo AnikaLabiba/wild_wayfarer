@@ -2,7 +2,7 @@ import React from 'react';
 
 const Blogs = () => {
     return (
-        <div className='container'>
+        <div className='container mb-5'>
             <div className='mt-5 shadow-sm p-3'>
                 <h4>Authorization vs Authentication</h4>
                 <p><b>Authentication:</b> authentication of a website or application is to identify or validate the identity of a user. User need to say and claim that who they are. Registering with email and password is an example of Authentication.</p>

@@ -2,7 +2,6 @@ import React from 'react';
 import { Button, Card, Col } from 'react-bootstrap';
 import { useNavigate } from 'react-router-dom';
 import './Service.css'
-import { AiOutlineCheckCircle } from 'react-icons/ai';
 
 const Service = ({ tour }) => {
     const { id, name, price, img, description } = tour

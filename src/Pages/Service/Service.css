@@ -1,5 +1,5 @@
 .card-box{
-    height: 640px;
+    height: 530px;
     border-radius: 20px;
     position: relative;
     background-color: #d8ddeb9c !important;
@@ -17,7 +17,6 @@
     color: rgb(20, 15, 85);
     font-weight: 700;
     background-color: #B0BDE0 ;
-    /* border-radius: 10px 0px 10px 0px; */
     border-radius: 10px;
 }
 .card .details-btn:hover{
